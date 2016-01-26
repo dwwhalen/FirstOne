@@ -2,7 +2,7 @@ require 'colorize'
 
 def assert message, &block
   begin
-    if (block.call)
+    if block.call
       puts "Assertion PASSED for [#{message}]".green
     else
       puts "Assertion FAILED for [#{message}]".red
@@ -12,14 +12,14 @@ def assert message, &block
   end
 end
 
-def assertIncludes expectedToInclude, fieldToCheck
+def assert_includes expected_to_include, field_to_check
   begin
-    if (fieldToCheck.include? expectedToInclude)
-      puts "Assertion PASSED. [#{fieldToCheck}] includes [#{expectedToInclude}]".green
+    if field_to_check.include? expected_to_include
+      puts "Assertion PASSED. [#{field_to_check}] includes [#{expected_to_include}]".green
     else
-      puts "Assertion FAILED.  Expected [#{fieldToCheck}] to include [#{expectedToInclude}]".red
+      puts "Assertion FAILED.  Expected [#{field_to_check}] to include [#{expected_to_include}]".red
     end
   rescue => e
-    puts "Assertion FAILED for #{fieldToCheck} with exception '#{e}'".red
+    puts "Assertion FAILED for #{field_to_check} with exception '#{e}'".red
   end
 end

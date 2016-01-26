@@ -8,7 +8,7 @@ class Basepage
   @title = @browser.title
   end
 
-  def theTitle
+  def the_title
     @title
   end
 
