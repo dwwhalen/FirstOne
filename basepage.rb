@@ -1,9 +1,11 @@
 
+require 'watir-webdriver'
+require 'minitest/autorun'
 
 class Basepage
 
   def initialize(url)
-  @browser = Watir::Browser.new
+  @browser = Watir::Browser.new :firefox
   @browser.goto url
   @title = @browser.title
   end

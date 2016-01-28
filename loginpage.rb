@@ -1,4 +1,4 @@
-require './basepage.rb'
+require File.dirname(__FILE__) + '/basepage.rb'
 
 class Loginpage < Basepage
 
