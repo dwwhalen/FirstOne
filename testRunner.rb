@@ -24,4 +24,4 @@ class TestRunner < MiniTest::Test
       myloginpage.close
   end
 
-  end
+end
