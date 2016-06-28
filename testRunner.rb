@@ -9,7 +9,7 @@ require "#{File.dirname(__FILE__)}/loginpage.rb"
 class TestRunner < MiniTest::Test
 
   def test_home_page_is_displayed
-      myloginpage = Loginpage.new('http://newtours.demoaut.com/')
+      myloginpage = Login_page.new('http://newtours.demoaut.com/')
 
        # assert('that the welcome message exists') { Loginpage.welcome.exists? }
        # assert('that the welcome message is visible') { Loginpage.welcome.visible? }

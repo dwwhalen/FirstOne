@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + '/basepage.rb'
 require File.dirname(__FILE__) + '/searchflightpage.rb'
 require './assertions.rb'
 
-class Loginpage < Basepage
+class Login_page < Basepage
 
   # def go_to_login
   #   @browser.button(:value => 'Login »').click
